@@ -14,7 +14,8 @@
        PROCEDURE DIVISION.
               PERFORM UNTIL WS-I = 0
               ADD -1 TO WS-I
-              IF WS-I = 0 DISPLAY "NO MORE BEER"
+              IF WS-I = 1 DISPLAY "ONE BOTTLE OF BEER ON THE WALL ONE BOTTLE OF BEER" 
+              ELSE IF WS-I = 0 DISPLAY "NO MORE BEER"
               ELSE DISPLAY WS-I " BOTTLES OF BEER ON THE WALL " WS-I
               " BOTTLES OF BEER "
               END-PERFORM.
